@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import sys
 import json
@@ -16,8 +16,8 @@ if __name__ == "__main__":
         if l.strip() == "":
             if len(lines) > 0:
                 sent = "".join(lines)
-                print spacing(sent)
-                print
+                new_sent = spacing(sent)
+                print (new_sent)
                 sys.stdout.flush()
                 lines = []
             else:
@@ -25,6 +25,7 @@ if __name__ == "__main__":
 
     if len(lines) > 0:
         sent = "".join(lines)
-        print spacing(sent)
+        new_sent = spacing(sent)
+        print (new_sent)
         lines = []
                 
